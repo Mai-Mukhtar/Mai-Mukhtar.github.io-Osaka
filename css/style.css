@@ -1,0 +1,145 @@
+/* h1{
+    position: relative;
+}
+h1::before{
+    content: '';
+    width: 190px;
+    height: 3px;
+   background-color: red;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%);
+}
+h1::after{
+    content: '';
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 53px;
+    left: 50%;
+    transform: translate(-50%);
+} */
+
+
+/* Home Section */
+body{
+    height: 4000px;
+    overflow-x: hidden;
+}
+#home{
+    background-image: url('../img/R.jfif');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.navbar{
+    --bs-navbar-color: #fff;
+    --bs-navbar-active-color: rgb(238, 29, 64);
+    --bs-navbar-hover-color:rgb(238, 29, 64) ;
+    --bs-navbar-brand-hover-color:rgb(238, 29, 64) ;
+
+}
+.navbar-brand{
+    color: #fff;
+}
+.img-content{
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    color: #fff;
+}
+.img-content a{
+    color: rgb(238, 29, 64);
+    text-decoration: none;
+    
+}
+.icons{
+    position: absolute; 
+    left: 1rem;
+    bottom: 1rem;
+    
+}
+.icons i{
+    padding-left: 1rem;
+}
+.icons i:hover{
+    color:rgb(238, 29, 64) ;
+}
+/* About Section */
+.title h2{
+    font-weight:700;
+    font-size: 4.5rem;
+    color: rgba(221, 216, 216, .5);
+    position: relative;
+
+}
+.title{
+    position: relative;
+}
+.title h3{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform:translate(-50% , -50%) ;
+   z-index: 2;
+   font-weight: bold;
+   font-size: 2.5rem;
+   
+}
+.about-content a{
+    text-decoration: none;
+    color:rgb(238, 29, 64);
+}
+
+/* Portfolio Section */
+
+.nav-tabs{
+    --bs-nav-tabs-border-width: none;
+    --bs-nav-tabs-link-active-color:rgb(238, 29, 64);
+
+
+}
+.link-black{
+    color: black;
+}
+.nav{
+    --bs-nav-link-hover-color:rgb(238, 29, 64); 
+}
+.img-layer{
+    position: relative;
+    overflow: hidden;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    left: 1.5rem;
+    right: 1.5rem;
+    bottom:100%;
+    opacity: 0;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+.img-layer:hover .layer{
+    opacity: 1;
+    bottom: 1.5rem;
+    transition:1s ;
+    -webkit-transition:1s ;
+    -moz-transition:1s ;
+    -ms-transition:1s ;
+    -o-transition:1s ;
+}
+.layer i:hover{
+    color: rgb(238, 29, 64);
+}
